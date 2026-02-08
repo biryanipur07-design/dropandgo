@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop and Go LLC | Dubai Corporate Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url('hero.jpg');
+            background-size: cover; background-position: center;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <div class="bg-slate-950 text-white text-[10px] py-2 px-6 md:px-20 flex justify-between items-center">
+        <div><i class="fas fa-phone-alt text-amber-500 mr-2"></i> +971 54 491 8077</div>
+        <div class="flex gap-4 uppercase font-bold tracking-widest">
+            <a href="license.pdf" target="_blank" class="hover:text-amber-500">DED License</a>
+            <span>|</span>
+            <a href="agreement.html" class="hover:text-amber-500">Service Agreement</a>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-xl sticky top-0 z-50 py-4 px-6 md:px-20 flex justify-between items-center border-b-4 border-amber-500">
+        <div class="flex items-center gap-6">
+            <img src="logo.png" alt="Drop and Go LLC" class="h-24 md:h-32 w-auto">
+            <div class="hidden lg:block border-l-2 border-slate-100 pl-6">
+                <h1 class="text-2xl font-black text-blue-900 italic leading-none uppercase">Drop & Go</h1>
+                <p class="text-[10px] text-amber-600 uppercase tracking-[0.3em] font-bold">Standard of Dubai Logistics</p>
+            </div>
+        </div>
+        <a href="tel:+971544918077" class="bg-blue-900 text-white px-8 py-4 rounded-xl font-black hover:bg-slate-800 transition shadow-lg">
+            CALL DISPATCH
+        </a>
+    </nav>
+
+    <header class="hero-section py-24 md:py-36 px-6 md:px-20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-white">
+                <h2 class="text-6xl md:text-8xl font-black mb-6 italic uppercase leading-tight">One Call. <br><span class="text-amber-400">Any Package.</span></h2>
+                <p class="text-xl opacity-90 mb-10 max-w-md font-light">Fast-track last-mile delivery. Based in Saeed Tower, serving all of Dubai.</p>
+            </div>
+            
+            <div class="bg-white p-10 rounded-2xl shadow-2xl border-t-[10px] border-blue-900">
+                <h3 class="text-blue-900 font-black text-2xl mb-6 uppercase italic">Consignment Tracking</h3>
+                <div class="space-y-4">
+                    <input type="text" id="trackInput" placeholder="Enter Tracking ID (e.g. DG-7780)" class="w-full border-2 border-slate-100 p-4 rounded-xl font-bold text-lg focus:border-amber-500 outline-none">
+                    <button onclick="processTracking()" class="w-full bg-blue-900 text-white py-5 rounded-xl font-black uppercase hover:bg-slate-800 transition">
+                        Track Shipment
+                    </button>
+                </div>
+
+                <div id="trackingResult" class="hidden mt-8 p-6 bg-slate-50 rounded-xl border-l-4 border-amber-500">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase">Status: UAE-DXB-SZR</span>
+                        <span class="bg-green-100 text-green-700 text-[10px] font-black px-2 py-1 rounded">IN TRANSIT</span>
+                    </div>
+                    <p class="text-blue-900 font-black text-sm uppercase">Shipment Found: Out for delivery.</p>
+                    <p class="text-slate-500 text-xs mt-2 italic">Call +971 54 491 8077 for GPS coordinates.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-20 items-start">
+            <div>
+                <h2 class="text-4xl font-black text-blue-900 mb-8 uppercase italic border-b-4 border-amber-500 inline-block">Our Hub</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-10">
+                    Drop and Go LLC is strategically located at **Saeed Tower** on Sheikh Zayed Road. We operate with a professional team of uniformed couriers providing instant last-mile delivery.
+                </p>
+                <img src="office.jpg" class="rounded-3xl shadow-xl mb-6 w-full h-auto">
+                <img src="workers.jpg" class="rounded-3xl shadow-xl w-full h-auto">
+            </div>
+
+            <div class="bg-slate-900 text-white p-12 rounded-[3rem] shadow-2xl border-t-[12px] border-amber-500 sticky top-40">
+                <h3 class="text-2xl font-black mb-8 uppercase tracking-widest text-amber-500">Head Office</h3>
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-amber-500 mt-1 text-2xl"></i>
+                        <p class="text-slate-100 text-xl leading-relaxed">
+                            <strong>SAEED TOWER</strong>, Trade Center District<br>
+                            Sheikh Zayed Road, Dubai, UAE
+                        </p>
+                    </div>
+                    <p class="text-slate-400 text-sm pl-10">P.O. Box: 294540 | Parcel ID: 3350336</p>
+                    <hr class="border-slate-800">
+                    <a href="https://maps.app.goo.gl/YourMapLink" target="_blank" class="block bg-white text-blue-900 text-center py-5 rounded-2xl font-black hover:bg-amber-400 transition text-xl">
+                        <i class="fas fa-location-arrow mr-2"></i> OPEN IN GOOGLE MAPS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 pt-20 pb-10 px-6 md:px-20 border-t-8 border-blue-900">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <img src="logo.png" class="h-20 mb-6">
+                <p class="text-[10px] uppercase tracking-widest">DED Licensed Logistics Provider</p>
+            </div>
+            <div>
+                <h4 class="text-white font-black uppercase text-xs tracking-widest mb-6">Legal Links</h4>
+                <ul class="text-[10px] space-y-4 font-bold uppercase tracking-widest">
+                    <li><a href="privacy.html" class="hover:text-amber-500 transition">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-amber-500 transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="md:text-right md:col-span-2">
+                <h4 class="text-white font-black uppercase text-xs tracking-widest mb-6">Direct Line</h4>
+                <p class="text-3xl font-black text-amber-500 mb-4">+971 54 491 8077</p>
+                <div class="flex md:justify-end gap-6 text-3xl">
+                    <a href="https://wa.me/971544918077" class="text-green-500 hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[10px] font-bold uppercase tracking-[0.5em] text-slate-700">
+            © 2026 DROP AND GO LOGISTICS LLC | SAEED TOWER | DUBAI, UAE
+        </div>
+    </footer>
+
+    <script>
+        function processTracking() {
+            const input = document.getElementById('trackInput').value;
+            const result = document.getElementById('trackingResult');
+            if(input.trim() === "") {
+                alert("Please enter a Tracking ID.");
+            } else {
+                result.classList.remove('hidden');
+                result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    </script>
+</body>
+</html>
